@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    font-family: var(--fontall); 
+    max-width: 1380px;
+    
+}
+:root{
+
+  /*Font*/
+  --fontall: 'Roboto', sans-serif;
+  --fontlg: 'Shrikhand' , cursive;
+
+  /*color*/
+  --primary: #9356DC;
+  --secon: #FF79DA;
+  --tert: #99E2D0;
+
+  --greybg: #f5f6fa;
+ 
+}
+
+
+body{
+    background-color:  var(--greybg);  
+    font-family: var(--fontall); 
+}
+
+/* Nav*/
+.nav{
+  display: flex;
+  height: 130px;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*Logo*/
+.logo{
+  position: relative;
+  align-items: center;
+  align-content: center;
+  text-align: center; 
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo img{
+  height: 70px;
+  width: 250px;
+}
+/*Header*/
+header{
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  background-color: #f5f6fa;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: -30px;
+}
+/*Location*/
+.location{
+  position: flex;
+  background-color: #dcdde1;
+  height: 40px;
+  margin-top: -8px;
+  align-items: center;
+  align-content: center;
+  text-align: center; 
+}
+.location .villeloca{
+  position: absolute;
+  align-items: center;
+  align-content: center;
+  text-align: center; 
+  left: 30%;
+}
+
+/*Head-Cont*/
+
+.head-cont h2{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.head-cont p{
+  font-size: 18px;
+  font-weight: 400;
+
+}
+/*Btn-nav*/
+.btn-nav{
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background: rgb(147,86,220);
+  background: radial-gradient(circle, rgba(147,86,220,1) 10%, rgba(252,124,218,1) 69%);
+  z-index: -1;
+  transition: transform 400ms ease-in;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 12px;
+ font-weight: 500;
+
+}
+/*Fonctionnement*/
+.cont-fonc{
+  position: relative;
+  background-color: #fff;
+  height: 300px;
+  margin-top: 270px;
+  border-radius: 5px;
+}
+.ctn-filtres {
+  align-items: center;
+  align-content: center;
+  text-align: center; 
+}
+.ctn-filtres h3{
+  position: relative;
+  float: left;
+  align-items: left;
+  align-content: left; 
+  margin-left: 20px;
+  top: 12px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 32px 16px;
+}
+.container-footer {
+  display: flex;
+  max-width: 1330px;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  gap: 16px;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+}
+
+.card-footer a {
+  margin-top: 5px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-footer a:hover {
+  text-decoration: underline !important;
+}
