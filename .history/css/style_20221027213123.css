@@ -215,25 +215,23 @@ header{
   margin: 8px 8px 8px;
 }
 
- .stars .ht1 {
+.cont-art .resto-card .stars {
   margin: 8px 8px 8px;
   color: #0065fc;
- right: 100px;
+  float: right;
  
 }
-
- .stars .ht2.active{
-  display: none;
-  right: 100px;
-   
+.cont-art .resto-card .stars .active{
+   display: none;
 }
-
- .stars .ht2 .active:hover{
+.stars .active:hover{
+  display: inline;
   position: absolute;
-  display: block;
   color: #9356DC;
   margin-top: -18px;
   cursor: pointer;
+
+
 }
 
 /*FOOTER*/

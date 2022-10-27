@@ -230,7 +230,7 @@ header{
 
  .stars .ht2 .active:hover{
   position: absolute;
-  display: block;
+  display: inline;
   color: #9356DC;
   margin-top: -18px;
   cursor: pointer;
