@@ -33,134 +33,252 @@
        </head>
 
        <body>
-<!--Nav + Logo-->
-   <div class="nav">
-    <div class="logo">
-      <img src="images/logo/ohmyfood.png" alt="Ohmyfood !" class="logo"/>
-    </div>
-   </div>
 
+ <!-- Header +Logo -->
+    <header>
+      <div class="header">
+          <a href="index.html"><h1 class="head-lg">ohmyfood</h1></a>
+      </div>
+  </header>
 
-<!--Header-->
-<header>
-  <!--Location-->
- <div class="location">
-  <div class="villeloca"><p><i class="fa-sharp fa-solid fa-location-dot"></i> Paris,Bellevue</p></div>
-</div>
+<!-- Localisation -->
+    <div class="main">
+      <div class="location">
+          <div class="location__icon">
+              <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="loc-street">
+              <p>Paris, Belleville</p>
+          </div>
+      </div>
+      </div>
 
-  <div class="head-cont">
-    <h2>Réserver le menu qui vous convient</h2>
-    <p>Découvrez des restaurants d'exeception, selectionnés par nos soins.</p>
-
-    <button class="btn-nav">
-      Explorer nos restaurants
-    </button>
-  </div>
-</header>
-
-<!--Fonctionnement-->
-<section class="cont-fonc">
-  
-  <h2>Fonctionnement</h2>
-
-  <div class="ctn-filtres">
-
-    <div class="filtres">
-      <div class="circle-inf"><p>1</p></div>
-      <p><i class="fa-regular fa-phone"></i>&nbsp;&nbsp;&nbsp;Choissez un restaurant</p>
-    </div>
-
-    <div class="filtres">
-      <div class="circle-inf"><p>2</p></div>
-      <p><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;&nbsp;Composer votre menu</p>
-    </div>
-
-    <div class="filtres">
-      <div class="circle-inf"><p>3</p></div>
-      <p><i class="fa-solid fa-store"></i>&nbsp;&nbsp;&nbsp;Degustez au restaurant</p>
-    </div>
-
-   
-  </div>
-
-</section>
-<!--Fonctionnement-->
-
-<!--Restau 1-->
-<section class="cont-art">
-  <h2>Restaurants</h2>
-
-  <!-- Card 1 -->
-              <article class="resto-card">
-                <a href="#">
-                  <img
-                    src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt="Photo de l'hébergement"
-                  />
-                  <div class="new">Nouveau</div>
-                  <h3>La Palette du goût</h3>
-                  <p>Ménilmontant</p>
-                  <div class="stars">
-                    <i class="fa-regular fa-heart" id="ht1"></i>
-                    <i class="fa-sharp fa-solid fa-heart active" id="ht2"></i>
+<!-- Hero section -->
+          <section class="hero">
+            <div class="hero__container">
+                <h2 class="hero__title">Réservez le menu qui vous convient</h2>
+                <p class="hero__text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                <div class="hero__button">
+                    <p>Explorer nos restaurants</p>
+                </div>
+            </div>
+          </section>
+<!-- Fonctionnement -->
+        <section class="fonctionnement__contain">
+          <div class="fonctionnement">
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
+            <div class="fonctionnement__steps">
+                <div class="fonctionnement__step">
+                    <div class="fonctionnement__number">1</div>
+                    <div class="fonctionnement__icon"><i class="fas fa-mobile-alt"></i></div>
+                    <p class="fonctionnement__text">Choisissez un restaurant </p>
+                </div>
+                <div class="fonctionnement__step">
+                    <div class="fonctionnement__number">2</div>
+                    <div class="fonctionnement__icon"><i class="fas fa-list-ul"></i></div>
+                    <p class="fonctionnement__text">Composez votre menu</p>
+                </div>
+                <div class="fonctionnement__step">
+                    <div class="fonctionnement__number">3</div>
+                    <div class="fonctionnement__icon"><i class="fas fa-store"></i></div>
+                    <p class="fonctionnement__text">Dégustez au restaurant</p>
+                </div>
+            </div>
+          </div>
+        </section>
+       <!-- Restaurants -->
+        <section class="restaurants">
+            <h2 class="restaurants__title">Restaurants</h2>
+            <div class="restaurant__cards">
+              <a href="pages_menu/la-palette-du-gout.html">
+                <div class="restaurant__card">
+                    <div class="restaurant__card-image">
+                      <div class="restaurant__card-new"><p>Nouveau</p></div>
+                      <img src="images/restaurants/1.jpg" alt="La palette du goût">
+                    </div>
+                    <div class="restaurant__block">
+                        <div class="restaurant__block-info">
+                            <div class="restaurant__block-name">La palette du goût</div>
+                            <div class="restaurant__block-city">Ménilmontant</div>
+                        </div>
+                        <div class="restaurant__block-hearth">
+                          <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient id="text-fill">
+                                  <stop offset="0%" stop-color="#9356DC" />
+                                  <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                
+                        <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC" />
+                                  <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                        </div>     
+                    </div>
+                </div>
+              </a>
+              <a href="pages_menu/la-note-enchantee.html">
+                <div class="restaurant__card">
+                    <div class="restaurant__card-image">
+                      <img src="images/restaurants/2.jpg" alt="La note enchantée">
+                      <div class="restaurant__card-new"><p>Nouveau</p></div>
+                    </div>
+                    <div class="restaurant__block">
+                        <div class="restaurant__block-info">
+                            <div class="restaurant__block-name">La note enchantée</div>
+                            <div class="restaurant__block-city">Charonne</div>
+                        </div>
+                        <div class="restaurant__block-hearth">
+                          <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC" />
+                                  <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                
+                        <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC" />
+                                  <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                        </div>     
+                    </div>
+                </div>
+              </a>
+                <a href="pages_menu/a-la-francaise.html">
+                <div class="restaurant__card">
+                  <div class="restaurant__card-image">
+                    <img src="images/restaurants/3.jpg" alt="À la française">
                   </div>
-                </a>
-              </article>
-
-
-               <!-- Card 2 -->
-               <article class="resto-card">
-                <a href="#">
-                  <img
-                    src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt="Photo de l'hébergement"
-                  />
-                  <div class="new">Nouveau</div>
-                  <h3>La note enchantée</h3>
-                  <p>Charonne</p>
-                  <div class="stars">
-                    <i class="fa-regular fa-heart"></i>
-                   
+                    <div class="restaurant__block">
+                        <div class="restaurant__block-info">
+                            <div class="restaurant__block-name">À la française</div>
+                            <div class="restaurant__block-city">Cité Rouge</div>
+                        </div>
+                        <div class="restaurant__block-hearth">
+                          <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC" />
+                                  <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                
+                        <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC" />
+                                  <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                            </div>     
+                    </div>
+                </div>
+              </a>
+              <a href="pages_menu/le-delice-des-sens.html">
+                <div class="restaurant__card">
+                  <div class="restaurant__card-image">
+                    <img src="images/restaurants/4.jpg" alt="Le délice des sens">
                   </div>
-                </a>
-              </article>
+                    <div class="restaurant__block">
+                        <div class="restaurant__block-info">
+                            <div class="restaurant__block-name">Le délice des sens</div>
+                            <div class="restaurant__block-city">Folie-Méricourt</div>
+                        </div>
+                        <div class="restaurant__block-hearth">
+                          <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC"/>
+                                  <stop offset="100%" stop-color="#FF79DA"/>
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                
+                        <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z"/>
+                          <defs>
+                            <linearGradient>
+                                  <stop offset="0%" stop-color="#9356DC"/>
+                                  <stop offset="100%" stop-color="#FF79DA"/>
+                            </linearGradient>
+                          </defs>                                   
+                        </svg>
+                            </div>     
+                    </div>
+                </div>
+              </a>
+            </div>
+        </section>
+  </main>
 
-               <!-- Card 3 -->
-               <article class="resto-card">
-                <a href="#">
-                  <img
-                    src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                    alt="Photo de l'hébergement"
-                  />
-                  <div class="new">Nouveau</div>
-                  <h3>A la francaise</h3>
-                  <p>Cité rouge</p>
-                  <div class="stars">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </a>
-              </article>
-
-               <!-- Card 4 -->
-               <article class="resto-card">
-                <a href="#">
-                  <img
-                    src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                    alt="Photo de l'hébergement"
-                  />
-                  <div class="new">Nouveau</div>
-                  <h3>Le delice des sens</h3>
-                  <p>Folie méricourt</p>
-                  <div class="stars">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </a>
-              </article>
 
 
 
 
-</section>
+
+
+
+
+
+
+
+
+
+
+
 
 <!--FOOTER-->
 <footer>
