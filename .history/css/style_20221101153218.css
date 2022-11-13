@@ -434,30 +434,3 @@ footer {
 .card-footer a:hover {
   text-decoration: underline !important;
 }
-/*responsive*/
-@media screen and (min-width: 800px) {
-  .restaurant__cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  .process__step {
-    width: 100%;
-  }
-  .process__steps {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-  }

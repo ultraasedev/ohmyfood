@@ -352,8 +352,8 @@ body{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 90px;
+  width: 110%;
+  height: 25px;
   border-radius: 0 0 20px 20px;
 }
 
@@ -434,30 +434,3 @@ footer {
 .card-footer a:hover {
   text-decoration: underline !important;
 }
-/*responsive*/
-@media screen and (min-width: 800px) {
-  .restaurant__cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  .process__step {
-    width: 100%;
-  }
-  .process__steps {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-  }
