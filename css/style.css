@@ -24,6 +24,9 @@ body{
     background-color:  var(--greybg);  
     font-family: var(--fontall); 
     margin: 0;
+    max-width: 1400px;
+    min-width: 560px;
+    
 }
 
 
@@ -50,6 +53,54 @@ body{
       -ms-flex-direction: column;
           flex-direction: column;
 }
+/*.loader {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  -webkit-animation: loader 2s linear;
+          animation: loader 2s linear;
+  visibility: hidden;
+}*/
+/*.loader__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: loader-border 2s linear;
+          animation: loader-border 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.loader__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+}*/
 /*Header*/
 .header {
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
@@ -461,3 +512,48 @@ footer {
             flex-direction: row;
     width: 100%;
   }
+  /*@keyframes loader {
+    0% {
+      visibility: visible;
+      opacity: 0.9;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes loader-border {
+    0% {
+      visibility: visible;
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes loader-border {
+    0% {
+      visibility: visible;
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }*/
