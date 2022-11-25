@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap');
+
+/*
+*       Variables Colors
+*/
+$--primary: #9356dc;
+$--secondary: #ff79da;
+$--tertiary: #99e2d0;
+$--darkgray: darkgray;
+$--dimgray: dimgray;
+$--lightgray: lightgray;
+$--ultralightgray: #EAEAEA;
+$--graywhite: #F6F6F6;
+$--lightpurple: #F5EDFF;
+$--lightgreen: #99E2D0;
+$--green: #2FAF94;
+$--grayblack: #353535;
+
+$gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+
+
+/* Var de lien */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/*
+*       Variables pour média queries
+*/
+$smartphone: 667px;
+$tablette: 768px;
+$netbook: 992px;
+$desktop: 1200px;
+$max-width: 1500px;

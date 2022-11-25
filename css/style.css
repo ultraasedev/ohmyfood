@@ -24,9 +24,9 @@ body{
     background-color:  var(--greybg);  
     font-family: var(--fontall); 
     margin: 0;
-    max-width: 1400px;
+    max-width: 1300px;
     min-width: 560px;
-    
+
 }
 
 
@@ -323,6 +323,9 @@ body{
       grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 20px;
+  justify-content: center;
+  left: 50%;
+  right: 50%;
 }
 
 .restaurant__card {

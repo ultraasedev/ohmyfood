@@ -1,0 +1,29 @@
+.main {
+    margin: 0;
+    padding: 0;
+    @include flexbox-center;
+    flex-direction: column;
+}
+.header {
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
+    position: relative;
+    @include flexbox-center();
+    height: 80px;
+    width: 100%;
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+        color: black;
+    }
+}
+
+.location {
+    @include flexbox-center();
+    background: #f3f3f3;
+    color: #7a7a7a;
+
+    &__city {
+        margin-left: 13px;
+        font-weight: 400;
+    }
+}   
