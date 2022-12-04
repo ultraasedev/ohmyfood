@@ -178,9 +178,8 @@ body {
   align-items: flex-start;
 }
 
-.restaurant__cards {
-  display: -ms-grid;
-  display: grid;
+.restaurants .restaurant__cards{
+  display: inline;
   -ms-grid-rows: 1fr [4];
   grid-template-rows: repeat(4, 1fr);
   -ms-grid-columns: 1fr;
@@ -188,19 +187,19 @@ body {
   grid-gap: 20px;
   padding: 20px;
   justify-content: center;
-  left: 50%;
+  left: 90%;
   right: 50%;
 }
 
-.restaurant__card {
+.restaurants .restaurant__card {
   position: relative;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: center ;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -323,6 +322,22 @@ body {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 370px) {
+  .restaurant__cards {
+    display: block;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: inline;
+  }
+}
 /*
 *       Variables Colors
 */
