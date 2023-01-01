@@ -375,7 +375,7 @@ color: #9356dc;
 footer .foot {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 /*Queries*/
 @media (max-width: 950px) {
